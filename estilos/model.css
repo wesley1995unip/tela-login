@@ -1,0 +1,113 @@
+@charset "utg-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body , html{
+    background-color: rgba(112, 24, 112, 0.596);
+    height: 100vh;
+    width: 100vw;
+    
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+    overflow: hidden; /* isso faz com que o border da imagem acompanhe o o border do login */
+}
+#login > #imagem{
+    display: block;
+    background: rgb(126, 21, 126) url(../imagens/pexels-dana-tentis-370799.jpg) ;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: width 1s, height 1s; /*animação para mudança de tamanho */
+
+}
+#login > #formulario{
+    display: block;
+    padding: 10px;
+}
+
+
+#login > #formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#formulario > p{
+    font-size: 0.8em;
+}
+.material-symbols-outlined {
+    border-radius: 5px;
+    height: 40px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' -25,
+    'opsz' 20
+    
+  }
+.campo > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color:  rgba(44, 44, 179, 0.596);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.campo > input[type=submit]:hover{
+    background-color: rgba(112, 21, 112, 0.616);
+    cursor: pointer;
+}
+.campo > a.botao{
+    display: block;
+    text-align: center;
+    background-color: rgba(31, 66, 66, 0.418);
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding-top: 7px;
+}
+.campo > a.botao:hover{
+    background-color: rgba(112, 21, 112, 0.616) ;
+
+}
+label{
+    font-size: 0.5em;
+}
+.campo > input{
+    width: 75%;
+    margin: 1px;
+}
+.campo > span{
+    background-color: rgba(112, 21, 112, 0.616);
+    color: white;
+    border-radius: 8px ;
+    height: 20px;
+    transform: translateY(10px);
+}
+#logo{
+    background-color: rgba(153, 50, 204, 0.753);
+    color: white;
+    height: 20px;
+    margin-right: 1px;
+    transform: translateY(5px);
+}

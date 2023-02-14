@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .campo > label{
+        font-size: 1em;
+    }
+    main > #login{
+        width: 80vw;
+        height: 45vh;
+
+    }
+    main > #login > #imagem {
+        float: right;
+        width: 30%;
+        height: 100%;
+        
+    }
+    main > #login > #formulario {
+        float: left;
+        width: 70%;
+    }
+    body{
+    background-image: linear-gradient(to top, rgb(126, 21, 126), rgba(44, 44, 179, 0.596));
+    }
+    main > #login > #formulario > p{
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width: 992px){
+    .campo > label{
+        font-size: 1.2em;
+    }
+    main > #login{
+        width: 950px;
+        height: 60vh;
+    }
+    main > #login > #imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+ 
+    }
+    main > #login > #formulario{
+        float: left;
+        width: 50%;
+
+    }
+    body{
+        background-image: linear-gradient(to right, rgb(126, 21, 126), rgba(44, 44, 179, 0.596));
+        }
+    main > #login > #formulario > p{
+            font-size: 1.8em;
+        }
+    
+}
